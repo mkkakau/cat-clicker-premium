@@ -1,7 +1,7 @@
 Cat Clicker Premium
 ===================
 
-Cat clicker game based on Ian Bogost's [Cow Clicker](https://en.wikipedia.org/wiki/Cow_Clicker). Created for Udacity's Front-End Web Developer Nanodegree. This project was created to learn the basics of the MVC design pattern.
+Cat clicker game based on Ian Bogost's [Cow Clicker](https://en.wikipedia.org/wiki/Cow_Clicker). Created for Udacity's Front-End Web Developer Nanodegree to learn the MVC design pattern.
 
 How to Play
 -----------
@@ -13,5 +13,6 @@ How to Play
 
   `git clone https://github.com/mkkakau/cat-clicker-premium.git`
 
-
-Not seeking collaboration.
+Create your Own
+---------------
+I am not currently seeking collaboration on this project, but if you would like to learn to make your own Cat Clicker game, start the [JavaScript Design Patterns](https://www.udacity.com/course/javascript-design-patterns--ud989) course instructed by Ben Jaffe.
