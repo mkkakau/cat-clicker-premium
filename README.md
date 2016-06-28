@@ -1,7 +1,7 @@
 Cat Clicker Premium
 ===================
 
-Cat clicker game based on Ian Bogost's [Cow Clicker](https://en.wikipedia.org/wiki/Cow_Clicker). Created for Udacity's Front-End Web Developer Nanodegree to learn the MVC design pattern.
+Cat clicker game based on Ian Bogost's [Cow Clicker](https://en.wikipedia.org/wiki/Cow_Clicker), a pay-per-click social experiment. Created for Udacity's Front-End Web Developer Nanodegree to learn the MVC design pattern.
 
 How to Play
 -----------
