@@ -10,6 +10,11 @@ main {
 
 }
 
+.navbar-brand {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 2.5em;
+}
+
 #cat-picture {
   margin: 0 auto;
 }
