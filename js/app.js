@@ -2,6 +2,7 @@ function CatClickerViewModel() {
   this.name = ko.observable('Box Cat');
   this.imgSrc = ko.observable('images/Box Cat.jpg');
   this.clickCount = ko.observable(0);
+  this.nicknames = ko.observableArray(['1', '2', '3', '4']);
 
   this.level = ko.computed(function () {
     var clicks = this.clickCount();
