@@ -9,11 +9,20 @@ function CatClickerViewModel() {
     if (clicks < 10) {
       return 'Newborn';
     }
-    else if (clicks >= 10 && clicks < 50) {
+    else if (clicks < 50) {
       return 'Infant';
     }
-    else {
+    else if (clicks < 100) {
+      return 'Child';
+    }
+    else if (clicks < 200) {
       return 'Teen';
+    }
+    else if (clicks < 500) {
+      return 'Adult';
+    }
+    else {
+      return 'Ninja';
     }
   }, this);
   this.incrementCounter = function () {
