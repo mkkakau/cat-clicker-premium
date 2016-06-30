@@ -24,16 +24,16 @@
     <div class="row">
       <div class="col-sm-8">
         <div id="cat-clicker">
-          <h2 id="cat-counter" class="text-center" data-bind="text: clickCount">0</h2>
-          <img id="cat-image" class="img-responsive img-rounded" data-bind="click: incrementCounter, attr: {src: imgSrc}" src="#">
-          <h2 id="cat-name" class="text-center" data-bind="text: name">Cat Name</h2>
-          <p class="text-center" data-bind="text: level"></p>
+          <h2 id="cat-counter" class="text-center" data-bind="text: currentCat().clickCount">0</h2>
+          <img id="cat-image" class="img-responsive img-rounded" data-bind="click: currentCat().incrementCounter, attr: {src: currentCat().imgSrc}" src="#">
+          <h2 id="cat-name" class="text-center" data-bind="text: currentCat().name">Cat Name</h2>
+          <p class="text-center" data-bind="text: currentCat().level"></p>
         </div>
       </div>
       <div class="col-sm-4">
         <h2 class="text-center">Pick a Cat</h2>
         <table id="cat-table" class="table table-hover">
-          <tbody data-bind="foreach: nicknames">
+          <tbody data-bind="foreach: currentCat().nicknames">
             <td data-bind="text: $data"></td>
           </tbody>
         </table>
