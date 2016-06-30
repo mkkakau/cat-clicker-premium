@@ -24,9 +24,9 @@
     <div class="row">
       <div class="col-sm-8">
         <div id="cat-clicker">
-          <h2 id="cat-counter" class="text-center">0</h2>
-          <img id="cat-image" class="img-responsive img-rounded" src="#" alt="Currently selected cat">
-          <h2 id="cat-name" class="text-center">Cat Name</h2>
+          <h2 id="cat-counter" class="text-center" data-bind="text: clickCount">0</h2>
+          <img id="cat-image" class="img-responsive img-rounded" data-bind="click: incrementCounter, attr: {src: imgSrc}" src="#">
+          <h2 id="cat-name" class="text-center" data-bind="text: name">Cat Name</h2>
         </div>
       </div>
       <div class="col-sm-4">
@@ -38,9 +38,8 @@
     </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="js/model.js"></script>
-  <script src="js/view.js"></script>
-  <script src="js/octopus.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
