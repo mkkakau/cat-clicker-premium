@@ -33,8 +33,11 @@
       <div class="col-sm-4">
         <h2 class="text-center">Pick a Cat</h2>
         <table id="cat-table" class="table table-hover">
-          <tbody data-bind="foreach: currentCat().nicknames">
-            <td data-bind="text: $data"></td>
+          <tbody data-bind="foreach: catList">
+            <tr data-bind="click: $parent.setCurrentCat($data)">
+              <td><img src="#" alt="#" class="thumb" data-bind="attr: {src: $data.imgSrc}"></td>
+              <td data-bind="text: $data.name"></td>
+            </tr>
           </tbody>
         </table>
       </div>
