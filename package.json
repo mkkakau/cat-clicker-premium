@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mkkakau/cat-clicker-premium#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2"
   }
 }
