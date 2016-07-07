@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    deploy = require('gulp-gh-pages');
 
 var bases = {
   src: 'src/',
@@ -11,6 +12,11 @@ var paths = {
   images: 'images/',
   css: 'css/'
 };
+
+gulp.task('deploy', function() {
+  return gulp.src(bases.dist)
+  .pipe(deploy());
+});
 
 gulp.task('clean', function() {
   return gulp.src(bases.dist)
