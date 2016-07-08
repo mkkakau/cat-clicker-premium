@@ -13,14 +13,14 @@ var paths = {
   css: 'css/'
 };
 
-gulp.task('deploy', function() {
-  return gulp.src(bases.dist)
-  .pipe(deploy());
-});
-
 gulp.task('clean', function() {
   return gulp.src(bases.dist)
-  .pipe(clean());
+    .pipe(clean());
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('dist/**/*')
+    .pipe(deploy());
 });
 
 gulp.task('default', ['clean']);
